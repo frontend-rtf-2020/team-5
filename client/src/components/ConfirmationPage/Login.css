@@ -1,0 +1,133 @@
+.Window{
+    height: 100vh;
+    align-items: center;
+    left:15%;
+    bottom:auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    position: fixed;
+    z-index: 9999;
+}
+#Output{
+    width: calc(100% - 550px);
+    padding: 160px 0;
+}
+
+#Description{
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    padding: 40px;
+    text-align: left;
+    color: white;
+}
+#Output h1{
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+
+}
+#Output h2{
+    margin: 15px 0 0 0;
+    font-size: 25px;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+#Input{
+    border-radius: 250px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px 20px rgb(0, 0, 0);
+    text-align: left;
+}
+.fullSize{
+    width: calc(100% - 0px);
+    margin: 0 0 20px 0;
+    border: none;
+    outline: none !important;
+    padding: 10px 0px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color:black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.09);
+
+}
+#Input h1{
+    margin: 0 0 5px 0 ;
+    font-weight: bold;
+    font-size:40px;
+    color:black;
+    line-height: initial;
+}
+#Input p{
+    margin: 0 0 20px 0;
+    font-size:20px;
+    line-height: initial;
+    color:black;
+}
+#Submit{
+    width: 100%;
+    margin: 5px 0 0 0;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 0;
+    outline: none !important;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer !important;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.31);
+}
+
+form{
+    line-height: initial;
+}
+
+.Auth{
+    width: 300px;
+
+}
+.a-center{
+    text-align: center;
+    margin-top: 15px;
+}
+.in-up{
+    width: 100%;
+    color:black;
+}
+
+#BackgroundColor{
+    background-image:url("https://cdn.allwallpaper.in/wallpapers/3140x2337/15329/trees-forest-national-geographic-monochrome-3140x2337-wallpaper.jpg") ;
+    background-size:cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    opacity: 0.5;
+
+}
+#Login{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+#Submit::-moz-focus-inner{
+    border: 0;
+}
+#Submit:active{
+    box-shadow: none;
+}

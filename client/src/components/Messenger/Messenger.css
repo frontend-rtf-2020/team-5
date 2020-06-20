@@ -1,0 +1,293 @@
+.messenger {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background: #313131;
+  grid-template-columns: 340px auto;
+  grid-template-rows: 60px auto 60px;
+}
+
+.createAndClose{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.createAndClose h2{
+  margin: 0;
+}
+
+.container {
+  padding: 10px;
+}
+
+.scrollable {
+  position: relative;
+  overflow-y: hidden;
+
+}
+
+.notification-default, .notification-default .timer { background-color: #6b6969 !important; }
+.notification-default { border-left: 8px solid #00000085 !important; }
+
+.sidebar {
+  grid-row-start: 1;
+  grid-row-end: span 3;
+  background-color: #222f3f;
+  color:white;
+}
+
+.content {
+  grid-row-start: 1;
+  grid-row-end: span 3;
+}
+#back-ground{
+  background-image:url("https://cdn.allwallpaper.in/wallpapers/3140x2337/15329/trees-forest-national-geographic-monochrome-3140x2337-wallpaper.jpg") ;
+  background-size:cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+  opacity: 0.4;
+}
+
+.ReactModal__Overlay{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.footer {
+  grid-column-start: 2;
+  background: white;
+}
+
+.sidebar{
+  background-color: #000000;
+  color: #ffffff;
+}
+.toolbar{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar { /* 1 - скроллбар */
+  width: 4px;
+  height: 4px;
+  background: rgba(52, 52, 52, 0.54);
+}
+
+::-webkit-scrollbar-button { /* 2 - кнопка */
+
+}
+
+::-webkit-scrollbar-track { /* 3 - трек */
+}
+
+::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
+}
+
+::-webkit-scrollbar-thumb { /* 5 - ползунок */
+  border-radius: 2px;
+  background-color: #d1d1d1;
+}
+
+::-webkit-scrollbar-corner { /* 6 - уголок */
+}
+
+::-webkit-resizer { /* 7 - изменение размеров */
+}
+
+.chat-photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.chat-main-info {
+  width: calc(100% - 70px);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  padding: 0px 35px 25px 35px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.61);
+}
+
+.chat-name-info{
+  font-weight: bolder;
+  word-wrap: break-word;
+}
+.modal-info-close{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 35px 0px 35px;
+}
+
+.members-case{
+  padding: 20px 0;
+}
+
+.chat-member-info{
+  width: calc(100% - 70px);
+  padding: 10px 35px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transition: 0.5s;
+}
+
+.chat-member-info:hover{
+  background-color: #636363;
+}
+
+.scrollMembers{
+  overflow-y: scroll;
+  max-height: 225px;
+}
+
+.members-title{
+  margin-left: 35px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.conversation-info{
+  width: calc(100% - 65px);
+}
+
+.conversation-title{
+  width: 100%;
+  max-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  text-transform: capitalize;
+}
+
+.conversation-snippet{
+  width: 100%;
+  overflow: hidden;
+  max-height: 25px;
+  text-overflow: ellipsis;
+}
+
+.ion-ios-menu{
+  display: none;
+}
+
+.ion-ios-arrow-round-back{
+  display: none;
+}
+
+.none-display-haruno{
+  position: absolute;
+  z-index: 4;
+  width: calc(100% - 75px);
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.sidebar-close{
+  position: absolute;
+  z-index: 2;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
+.close-tab-sidebar{
+  display: block;
+}
+
+.ReactModal__Overlay--after-open{
+  z-index: 5;
+}
+
+
+@media screen and (max-width : 800px) {
+  .messenger {
+    grid-template-columns: 0 auto;
+
+  }
+  .compose{
+    width: calc(100% - 30px);
+  }
+  .ion-ios-menu{
+    display: block;
+  }
+
+  .ion-ios-arrow-round-back{
+    display: block;
+  }
+
+  .fixed-bool{
+    position: fixed;
+  }
+
+  .message-list-container{
+    margin-top: 52px;
+    padding: 5px;
+    height: calc(100vh - 126px) !important;
+  }
+
+  .message .bubble-container .bubble{
+    max-width: calc(90% - 20px);
+  }
+
+  .ReactModal__Content--after-open{
+    width: calc(100% - 40px) !important;
+    padding: 20px !important;
+    border-radius: 0 !important;
+    height: calc(100% - 40px);
+    box-shadow: 0px 0px 10px 2px rgba(181,181,181,0.3) !important;
+  }
+  #Output{
+    display: none;
+  }
+
+  .Window{
+    justify-content: center !important;
+  }
+
+  #Input{
+    border-radius: 0px !important;
+    padding: 10px !important;
+  }
+
+  #formField{
+    padding: 40px !important;
+    width: calc(100% - 120px) !important;
+    height: calc(100vh - 160px) !important;
+  }
+}
+
+@media screen and (max-width : 400px){
+  .Window{
+    width: 100% !important;
+    left: 0 !important;
+  }
+  #Input{
+    width: calc(100% - 20px) !important;
+    padding: 0px 10px 0px 10px !important;
+  }
+  #formField{
+    padding: 20px !important;
+    width: calc(100% - 60px) !important;
+
+  }
+  #Register{
+    align-items: flex-start !important;
+  }
+}

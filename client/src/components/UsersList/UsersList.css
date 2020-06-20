@@ -1,0 +1,30 @@
+.conversation-list-n {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin-top: 10px;
+  overflow-y: scroll;
+  width: calc(100% + 4px);
+}
+.send-users-btn{
+  background: white;
+  padding: 8px 20px !important;
+  margin-top: 20px;
+  color:black;
+  border-radius: 20px !important;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+  font-weight: bolder;
+  transition: 0.8s;
+}
+
+.send-users-btn:hover {
+  background-color: #505050;
+  color: white;
+}
+
+.textForm{
+  margin: 0;
+  margin-top: 20px;
+}

@@ -1,0 +1,41 @@
+:root{
+
+}
+
+#Register{
+    width: 100%;
+    padding:50px 0;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+#formField{
+    width: calc(50% - 100px);
+    padding: 50px;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: scroll;
+}
+
+#formField h1{
+    margin: 0 0 10px 0;
+}
+
+#formField p{
+    margin: 10px 0 10px 0;
+    text-align: left;
+}
+.one-block{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (max-height : 750px){
+    #formField{
+        padding:30px 30px;
+        height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+
+    }
+}

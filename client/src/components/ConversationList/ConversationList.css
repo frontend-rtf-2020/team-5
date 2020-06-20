@@ -1,0 +1,9 @@
+.conversation-list {
+  display: flex;
+  flex-direction: column;
+
+}
+.scrollable-element{
+  overflow-y: scroll;
+  height: calc(100vh - 103px);
+}

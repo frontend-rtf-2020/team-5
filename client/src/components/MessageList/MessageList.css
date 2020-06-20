@@ -1,0 +1,9 @@
+.message-list-container {
+  padding: 10px;
+    height: calc(100vh - 136px) !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.toolbar{
+  width: 100%;
+}

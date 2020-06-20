@@ -1,0 +1,33 @@
+.compose {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 370px);
+
+  bottom: 0px;
+  background: #000000;
+}
+
+.compose-input {
+  flex: 1;
+  border: none;
+  font-size: 14px;
+  height: 40px;
+  background: rgba(39, 39, 39, 0);
+  margin-right: -5px;
+  color:white;
+  overflow-y: scroll;
+  border-bottom: 2px solid white;
+}
+
+.compose-input:active{
+  background-color: rgba(39, 39, 39, 0);}
+
+.compose-input::placeholder {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.compose .toolbar-button {
+  margin-left: 15px;
+}
